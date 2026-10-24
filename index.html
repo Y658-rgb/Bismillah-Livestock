@@ -1,35 +1,363 @@
-<!-- 1. BBQ & Dining -->
-<img
-  src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=900&q=80"
-  alt="Outdoor BBQ grill and dining setup"
->
 
-<!-- 2. Family-Friendly Visit -->
-<img
-  src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=900&q=80"
-  alt="Outdoor family and children's play area"
->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bismillah Livestock & Farm Retreat</title>
+<meta name="description" content="Livestock buying and selling, family farm visits, BBQ and meat preparation services near Lahore.">
+<style>
+:root{--green:#173d2b;--green2:#24583e;--cream:#f7f4ec;--gold:#c7a45a;--ink:#1d2821;--muted:#69756c}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.55}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1160px,92%);margin:auto}
+header{background:var(--green);color:white;position:sticky;top:0;z-index:5;border-bottom:1px solid #ffffff24}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:15px 0}
+.brand{font-weight:800;letter-spacing:.3px}
+.brand small{display:block;color:#e3d4ad;font-size:11px;letter-spacing:1.6px;text-transform:uppercase}
+nav{display:flex;gap:20px;align-items:center;font-size:13px}
+nav a:hover{color:#e6c879}
+.btn{display:inline-block;background:var(--gold);color:#18291e;padding:12px 17px;border-radius:5px;font-weight:700;font-size:13px;border:0;cursor:pointer}
+.btn.secondary{background:transparent;border:1px solid #ffffff9c;color:white}
+.btn.green{background:var(--green);color:white}
+.hero{background:linear-gradient(90deg,rgba(12,34,23,.88),rgba(12,34,23,.25)),url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1800&q=85') center/cover;color:white}
+.hero-inner{padding:105px 0 95px;max-width:740px}
+.eyebrow{color:#b08b39;text-transform:uppercase;letter-spacing:2px;font-size:11px;font-weight:800}
+.hero .eyebrow{color:#e7cb83}
+.hero h1{font-family:Georgia,serif;font-size:clamp(38px,6vw,66px);line-height:1.04;margin:15px 0}
+.hero p{max-width:620px;color:#f0f1ec;font-size:17px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.proof{background:white;border-bottom:1px solid #e6e2d7}
+.proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:21px 0;text-align:center;font-size:13px;font-weight:700;color:var(--green)}
+section{padding:70px 0}
+.section-head{max-width:680px;margin-bottom:28px}
+.section-head h2{font:bold clamp(28px,4vw,42px)/1.12 Georgia,serif;color:var(--green);margin:8px 0 12px}
+.section-head p{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:white;border-radius:10px;overflow:hidden;box-shadow:0 8px 28px #1b33200d;border:1px solid #e9e5dc}
+.card img{width:100%;height:205px;object-fit:cover;display:block}
+.card-body{padding:21px}
+.card h3{margin:0 0 8px;color:var(--green);font:bold 22px Georgia,serif}
+.card p{color:var(--muted);font-size:14px;margin:0 0 17px}
+.text-link{font-size:13px;font-weight:800;color:var(--green2)}
+.market{background:#eeece3}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}
+.filters select,.filters input,.booking input,.booking select,.booking textarea{padding:12px;border:1px solid #d7d8ce;border-radius:5px;background:white;font:inherit;min-width:145px}
+.animal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.animal{background:white;border:1px solid #e3e0d7;border-radius:9px;overflow:hidden}
+.animal img{width:100%;height:210px;object-fit:cover;display:block;background:#ddd}
+.animal-content{padding:17px}
+.animal h3{margin:0;color:var(--green)}
+.animal .meta{font-size:13px;color:var(--muted);margin:7px 0 13px}
+.price{font-weight:800;font-size:19px;margin-bottom:12px}
+.tag{display:inline-block;font-size:10px;text-transform:uppercase;letter-spacing:1px;background:#e7efe6;color:var(--green);padding:5px 8px;border-radius:3px;margin-bottom:8px}
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.feature img{width:100%;height:390px;object-fit:cover;border-radius:12px}
+.feature h2{font:bold clamp(28px,4vw,42px)/1.1 Georgia,serif;color:var(--green);margin:8px 0 15px}
+.feature p,.feature li{color:var(--muted);font-size:15px}
+.feature ul{padding-left:19px}
+.booking{background:white;border:1px solid #e6e1d6;border-radius:10px;padding:25px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.booking input,.booking select,.booking textarea{width:100%;min-width:0}
+.booking textarea{grid-column:1/-1;min-height:95px}
+.booking button{margin-top:14px}
+.location{background:var(--green);color:white}
+.location h2{color:white}
+.location p{color:#dce5dc}
+.location-box{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.map-placeholder{border:1px solid #ffffff45;border-radius:10px;min-height:230px;display:grid;place-items:center;text-align:center;padding:25px;background:#ffffff0b}
+footer{background:#10291c;color:#d7e0d7;padding:30px 0;font-size:13px}
+.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.note{font-size:12px;color:var(--muted);margin-top:12px}
+@media(max-width:800px){
+ nav{gap:10px;flex-wrap:wrap;justify-content:flex-end}
+ nav a{font-size:12px}
+ .grid,.animal-grid{grid-template-columns:1fr 1fr}
+ .feature,.location-box{grid-template-columns:1fr}
+ .hero-inner{padding:75px 0}
+ .proof-grid{grid-template-columns:1fr;gap:8px}
+}
+@media(max-width:540px){
+ .nav{align-items:flex-start;flex-direction:column}
+ .grid,.animal-grid{grid-template-columns:1fr}
+ .form-grid{grid-template-columns:1fr}
+ .booking textarea{grid-column:auto}
+ .hero p{font-size:15px}
+ section{padding:52px 0}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home">BISMILLAH LIVESTOCK<small>& ALLIED SERVICES</small></a>
+    <nav>
+      <a href="#livestock">Buy Livestock</a>
+      <a href="#experience">Family Farm</a>
+      <a href="#services">Our Services</a>
+      <a href="#booking">Booking</a>
+      <a class="btn" href="#booking">Enquire Now</a>
+    </nav>
+  </div>
+</header>
 
-<!-- 3. Goat listing -->
-<img
-  src="https://images.unsplash.com/photo-1524024973431-2ad916746881?auto=format&fit=crop&w=900&q=80"
-  alt="Goat on a farm"
->
+<main id="home">
+  <div class="hero">
+    <div class="wrap hero-inner">
+      <div class="eyebrow">Livestock Market • Family Farm Retreat</div>
+      <h1>A Better Place to Buy Livestock—and Spend Time Together.</h1>
+      <p>A clean, welcoming farm experience for livestock buying and selling, family visits, BBQ, and meat-preparation services—planned around comfort, convenience, and trust.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#livestock">Explore Livestock</a>
+        <a class="btn secondary" href="#experience">Discover Farm Experience</a>
+      </div>
+    </div>
+  </div>
 
-<!-- 4. Buck listing: الگ تصویر -->
-<img
-  src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=900&q=80"
-  alt="Buck on a farm"
->
+  <div class="proof">
+    <div class="wrap proof-grid">
+      <div>✓ Livestock Buying & Selling</div>
+      <div>✓ Family-Friendly Visit Experience</div>
+      <div>✓ WhatsApp Enquiries & Advance Booking</div>
+    </div>
+  </div>
 
-<!-- 5. Calf / Katta listing -->
-<img
-  src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=900&q=80"
-  alt="Cattle in a farm setting"
->
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">One Farm, Two Experiences</div>
+        <h2>A Livestock Centre and a Family Farm Retreat</h2>
+        <p>Unlike a traditional mandi, our concept brings livestock trading together with a comfortable place for families to visit, sit, eat, and spend time while they make their arrangements.</p>
+      </div>
 
-<!-- 6. Bring the Family section -->
-<img
-  src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=85"
-  alt="Natural green countryside farm"
->
+      <div class="grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1524024973431-2ad916746881?auto=format&fit=crop&w=900&q=80" alt="Goat on a farm" loading="lazy">
+          <div class="card-body">
+            <h3>Buy & Sell Livestock</h3>
+            <p>Browse available goats and calves, compare details and prices, then contact us directly to enquire or arrange a visit.</p>
+            <a class="text-link" href="#livestock">Browse animals →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=900&q=80" alt="Outdoor BBQ grill and dining setup" loading="lazy">
+          <div class="card-body">
+            <h3>BBQ & Dining</h3>
+            <p>Plan a BBQ or meal with family and guests. Share your group size and requirements when requesting a booking.</p>
+            <a class="text-link" href="#booking">Request a booking →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=900&q=80" alt="Green outdoor family play area" loading="lazy">
+          <div class="card-body">
+            <h3>Family-Friendly Visit</h3>
+            <p>Visit with your family. Children can enjoy outdoor space while adults sit, eat, and discuss livestock purchases.</p>
+            <a class="text-link" href="#experience">Explore the experience →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="market" id="livestock">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Available Animals</div>
+        <h2>Find an Animal That Fits Your Needs</h2>
+        <p>Use the filters to narrow down by animal type and budget. These sample listings should be replaced with actual animal details and prices before launch.</p>
+      </div>
+
+      <div class="filters">
+        <select id="typeFilter" aria-label="Animal type">
+          <option value="all">All animal types</option>
+          <option value="goat">Goats</option>
+          <option value="buck">Bucks</option>
+          <option value="calf">Calves / Kattay</option>
+        </select>
+        <input id="minPrice" type="number" placeholder="Min price (PKR)" aria-label="Minimum price">
+        <input id="maxPrice" type="number" placeholder="Max price (PKR)" aria-label="Maximum price">
+        <button class="btn green" type="button" onclick="filterAnimals()">Apply Filters</button>
+        <button class="btn" type="button" onclick="resetFilters()">Reset</button>
+      </div>
+
+      <div class="animal-grid" id="animalGrid">
+        <article class="animal" data-type="goat" data-price="35000">
+          <img src="https://images.unsplash.com/photo-1524024973431-2ad916746881?auto=format&fit=crop&w=900&q=80" alt="Goat listing" loading="lazy">
+          <div class="animal-content">
+            <span class="tag">Sample listing</span>
+            <h3>Goat · BG-001</h3>
+            <div class="meta">Breed, age and verified weight to be added</div>
+            <div class="price">PKR 35,000</div>
+            <a class="btn green wa-link" href="#booking" data-message="I am interested in goat BG-001">Enquire on WhatsApp</a>
+          </div>
+        </article>
+
+        <article class="animal" data-type="buck" data-price="45000">
+          <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=900&q=80" alt="Buck listing" loading="lazy">
+          <div class="animal-content">
+            <span class="tag">Sample listing</span>
+            <h3>Buck · BG-002</h3>
+            <div class="meta">Breed, age and verified weight to be added</div>
+            <div class="price">PKR 45,000</div>
+            <a class="btn green wa-link" href="#booking" data-message="I am interested in buck BG-002">Enquire on WhatsApp</a>
+          </div>
+        </article>
+
+        <article class="animal" data-type="calf" data-price="110000">
+          <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=900&q=80" alt="Cattle calf in a farm setting" loading="lazy">
+          <div class="animal-content">
+            <span class="tag">Sample listing</span>
+            <h3>Calf / Katta · CK-001</h3>
+            <div class="meta">Breed, age and verified weight to be added</div>
+            <div class="price">PKR 110,000</div>
+            <a class="btn green wa-link" href="#booking" data-message="I am interested in calf CK-001">Enquire on WhatsApp</a>
+          </div>
+        </article>
+      </div>
+      <p class="note">Prices and listings shown are demo content only—not live offers. Final price, availability, animal details and sale terms must be confirmed with the farm.</p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap feature">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85" alt="Green countryside farm setting" loading="lazy">
+      <div>
+        <div class="eyebrow">Farm Experience</div>
+        <h2>Bring the Family. Make a Day of It.</h2>
+        <p>Customers can plan a livestock visit with family or guests. Enjoy the countryside, sit comfortably, and arrange food or a planned BBQ.</p>
+        <ul>
+          <li>Family and group visits by advance arrangement</li>
+          <li>BBQ and meal arrangements on request</li>
+          <li>Slaughter, meat cutting and packing enquiries</li>
+          <li>Livestock selection and purchase at the same location</li>
+        </ul>
+        <a class="btn green" href="#booking">Plan Your Visit</a>
+        <p class="note">Services are subject to advance confirmation, site arrangements and applicable local permissions. Replace sample photos with real farm photos when available.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking" class="market">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Contact & Booking</div>
+        <h2>Tell Us What You Have in Mind</h2>
+        <p>Send a request for livestock details, a family visit, BBQ, or meat services. We will confirm availability and arrangements directly.</p>
+      </div>
+
+      <div class="booking">
+        <form id="bookingForm" class="form-grid">
+          <input id="customerName" required placeholder="Your name">
+          <input id="customerPhone" required placeholder="Your phone number">
+          <select id="service" required>
+            <option value="">Select a service</option>
+            <option>Buy livestock</option>
+            <option>Family farm visit</option>
+            <option>BBQ / dining</option>
+            <option>Slaughter and meat preparation</option>
+            <option>Meat cutting and distribution</option>
+            <option>Group / guest booking</option>
+          </select>
+          <input id="visitDate" type="date" aria-label="Preferred date">
+          <input id="guests" type="number" min="1" placeholder="Number of guests (if visiting)">
+          <input id="budget" placeholder="Budget / animal ID (optional)">
+          <textarea id="details" placeholder="Tell us your requirements (optional)"></textarea>
+          <button class="btn green" type="submit">Send Enquiry on WhatsApp</button>
+        </form>
+        <p class="note">Add your official WhatsApp number, exact farm address and Google Maps pin before launch. The booking form currently uses a demo number placeholder.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="location" id="contact">
+    <div class="wrap location-box">
+      <div>
+        <div class="eyebrow">Visit Us</div>
+        <h2 style="font:bold 38px Georgia,serif;margin:8px 0">Find the Farm</h2>
+        <p>Located in the Kala Shah Kaku / Muridke area near Lahore. The exact address and map pin will be added here so customers can navigate easily.</p>
+        <p><strong>WhatsApp:</strong> To be added<br><strong>Visits:</strong> Advance confirmation recommended</p>
+        <a class="btn" href="#booking">Contact & Book</a>
+      </div>
+      <div class="map-placeholder">
+        <div>
+          <strong>Google Maps location</strong><br>
+          <span style="font-size:13px;color:#dce5dc">Exact farm pin will be inserted here</span><br><br>
+          <a class="btn secondary" href="#booking">Request Directions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div><strong>Bismillah Livestock & Allied Services</strong><br>Livestock Trading • Family Farm Retreat • BBQ Experience</div>
+    <div>© <span id="year"></span> Bismillah Livestock. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+function filterAnimals(){
+  const type=document.getElementById('typeFilter').value;
+  const min=Number(document.getElementById('minPrice').value)||0;
+  const max=Number(document.getElementById('maxPrice').value)||Infinity;
+
+  document.querySelectorAll('.animal').forEach(card=>{
+    const price=Number(card.dataset.price);
+    const typeMatch=type==='all'||card.dataset.type===type;
+    card.style.display=(typeMatch&&price>=min&&price<=max)?'':'none';
+  });
+}
+
+function resetFilters(){
+  document.getElementById('typeFilter').value='all';
+  document.getElementById('minPrice').value='';
+  document.getElementById('maxPrice').value='';
+  filterAnimals();
+}
+
+const WHATSAPP_NUMBER='92XXXXXXXXXX'; // Replace with official number, digits only.
+
+document.getElementById('bookingForm').addEventListener('submit',function(e){
+  e.preventDefault();
+
+  const fields=[
+    'Farm enquiry',
+    'Name: '+document.getElementById('customerName').value,
+    'Phone: '+document.getElementById('customerPhone').value,
+    'Service: '+document.getElementById('service').value,
+    'Preferred date: '+(document.getElementById('visitDate').value||'Not specified'),
+    'Guests: '+(document.getElementById('guests').value||'Not specified'),
+    'Budget / Animal ID: '+(document.getElementById('budget').value||'Not specified'),
+    'Details: '+(document.getElementById('details').value||'None')
+  ];
+
+  if(WHATSAPP_NUMBER.includes('X')){
+    alert('Please add your official WhatsApp number in the website code first.');
+    return;
+  }
+
+  window.open('https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent(fields.join('\n')),'_blank');
+});
+
+document.querySelectorAll('.wa-link').forEach(link=>{
+  link.addEventListener('click',function(e){
+    if(WHATSAPP_NUMBER.includes('X')){
+      e.preventDefault();
+      alert('Please add your official WhatsApp number in the website code first.');
+      return;
+    }
+
+    e.preventDefault();
+    window.open('https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent(this.dataset.message),'_blank');
+  });
+});
+
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
